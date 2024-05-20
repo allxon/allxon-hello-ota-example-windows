@@ -24,8 +24,8 @@ Since you are supposed to verify the OTA activity before doing mass deployment, 
 
 1. Make sure you have put everything (docker image, firmware, BSP image, application file, software, script, image, video, etc.) you are going to deploy onto your devices into the `ota_content` directory. 
 2. Edit `ota_deploy.bat` to suit your needs. (e.g. calling an executable file to execute an action or run an application update).
-3. Open up PowerShell and navigate to the directory where allxon-cli tool is placed.
-   `$cd C:\Program Files\allxon-cli\bin\`
+3. Run PowerShell as administrator and navigate to the directory where allxon-cli tool is placed. 
+`$cd 'C:\Program Files\allxon-cli\bin\'`
 4. Run `$.\allxon-cli ota make –d {path of the ota_content folder}` to generate an OTA artifact. 
 5. Run `$.\allxon-cli ota test -f {file name of the artifact}` to test the Allxon OTA artifact you just generated. This action will simulate OTA deployment by asking the Allxon Agent to execute `ota_deploy.bat`, so please do mind that all the commands in the script are going to be executed on the edge. 
 6. Verify if the deployment operation is executed as expected as specified in `ota_deploy.bat`.
