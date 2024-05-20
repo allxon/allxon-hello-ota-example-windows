@@ -15,7 +15,7 @@ allxon-hello-ota-example-main-windows
 ```
 - **ota_content**:  The folder where you put all the necessary files you want to deploy to your edge devices over-the-air.
 - **ota_deploy.bat**: The executable script that handles all operations related to this OTA deployment. You are allowed to customize the process to suit your needs by transcribing all the corresponding commands into this one automation script, which will be automatically executed by our agent once the artifact is downloaded and unpacked.
-- Other files: Example files used for demonstration, could be replaced with your own wanted files. And in this Hello OTA example, you will see these files be moved around. Find the above `ota_deploy.bat` for more details.
+- Other files: Example files used for demonstration, could be replaced with your own wanted files. In this example, you’ll see a visualizer being displayed and other OTA attached files being moved around folders. Find the above `ota_deploy.bat` for more details.
 
 
 
