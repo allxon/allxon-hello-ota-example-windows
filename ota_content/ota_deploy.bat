@@ -7,10 +7,10 @@ SET DEST=%temp%\allxonHelloOTA
 
 mkdir "%DEST%"
 
-xcopy playAscii.bat "%DEST%" /I /Y
-xcopy allxonAscii "%DEST%\allxonAscii" /I /Y
+robocopy "." "%DEST%" playAscii.bat
+robocopy "allxonAscii" "%DEST%\allxonAscii" /E
 
-xcopy HelloAllxon.bat "%userprofile%\desktop" /Y
+robocopy "." "%userprofile%\desktop" HelloAllxon.bat
 
 echo "Install finishded!"
 
